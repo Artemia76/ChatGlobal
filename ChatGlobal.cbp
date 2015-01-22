@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ChatGlobal" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Build65">
+				<Option output="./Build65/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build65/" />
+				<Option object_output="./Build65/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Linker>
+					<Add library="aw65" />
+				</Linker>
+			</Target>
+			<Target title="Build36">
+				<Option output="./Build36/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build36/" />
+				<Option object_output="./Build36/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="`wx-config --cflags`" />
+					<Add directory="C:/devel/activeworlds/sdk36" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config --libs`" />
+					<Add library="aw" />
+					<Add directory="C:/devel/activeworlds/sdk36" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="upx.exe -9 .\Build36\ChatGlobal.exe" />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Build65Dll">
+				<Option output="./Build65Dll/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build65Dll" />
+				<Option object_output="./Build65Dll/objs" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Option projectLinkerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O" />
+					<Add option="-W" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="wxmsw28" />
+					<Add library="aw65" />
+					<Add directory="C:/wxWidgets-2.8.0/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Build77">
+				<Option output="./Build77/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build77/" />
+				<Option object_output="./Build77/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="`wx-config --cflags`" />
+					<Add directory="C:/devel/activeworlds/sdk77" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config --libs`" />
+					<Add library="aw" />
+					<Add directory="C:/devel/activeworlds/sdk77" />
+				</Linker>
+			</Target>
+			<Target title="Build84">
+				<Option output="./Build84/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build84/" />
+				<Option object_output="./Build84/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="`wx-config --cflags`" />
+					<Add directory="C:/devel/activeworlds/sdk84/mingw" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config --libs`" />
+					<Add library="aw" />
+					<Add directory="C:/devel/activeworlds/sdk84" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="upx.exe -9 .\Build84\ChatGlobal.exe" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Build84d">
+				<Option output="./Build84d/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build84d/" />
+				<Option object_output="./Build84d/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="`wx-config --cflags --debug=yes --unicode=yes`" />
+					<Add directory="C:/devel/activeworlds/sdk84/mingw" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config --libs --debug=yes --unicode=yes`" />
+					<Add library="aw" />
+					<Add directory="C:/devel/activeworlds/sdk84" />
+				</Linker>
+			</Target>
+			<Target title="Win93">
+				<Option output="./Build93/ChatGlobal" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./Build93/" />
+				<Option object_output="./Build93/obj/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="`wx-config --cflags`" />
+					<Add directory="C:/devel/activeworlds/sdk93" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config --libs`" />
+					<Add library="aw" />
+					<Add directory="C:/devel/activeworlds/sdk93" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="upx.exe -9 .\Build93\ChatGlobal.exe" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="Icones" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="Icones" />
+		</ResourceCompiler>
+		<Unit filename="Sources/AboutBox.cpp" />
+		<Unit filename="Sources/AboutBox.h" />
+		<Unit filename="Sources/CAntiJog.cpp" />
+		<Unit filename="Sources/CAntiJog.h" />
+		<Unit filename="Sources/CBot.cpp" />
+		<Unit filename="Sources/CBot.h" />
+		<Unit filename="Sources/CBotCG.cpp" />
+		<Unit filename="Sources/CBotCG.h" />
+		<Unit filename="Sources/CColBox.cpp" />
+		<Unit filename="Sources/CColBox.h" />
+		<Unit filename="Sources/CHorBox.cpp" />
+		<Unit filename="Sources/CHorBox.h" />
+		<Unit filename="Sources/CListUser.cpp" />
+		<Unit filename="Sources/CListUser.h" />
+		<Unit filename="Sources/COutils.cpp" />
+		<Unit filename="Sources/COutils.h" />
+		<Unit filename="Sources/CTaskBar.cpp" />
+		<Unit filename="Sources/CTaskBar.h" />
+		<Unit filename="Sources/CUser.cpp" />
+		<Unit filename="Sources/CUser.h" />
+		<Unit filename="Sources/CXelagServer.cpp" />
+		<Unit filename="Sources/CXelagServer.h" />
+		<Unit filename="Sources/ChatGlobal.cpp" />
+		<Unit filename="Sources/ChatGlobal.h" />
+		<Unit filename="Sources/Ciel.cpp" />
+		<Unit filename="Sources/Ciel.h" />
+		<Unit filename="Sources/Cpasspriv.cpp" />
+		<Unit filename="Sources/Cpasspriv.h" />
+		<Unit filename="Sources/CtrlLog.cpp" />
+		<Unit filename="Sources/CtrlLog.h" />
+		<Unit filename="Sources/Ctrlaw.cpp" />
+		<Unit filename="Sources/Ctrlaw.h" />
+		<Unit filename="Sources/DBColor.cpp" />
+		<Unit filename="Sources/DBColor.h" />
+		<Unit filename="Sources/DBase.cpp" />
+		<Unit filename="Sources/DBase.h" />
+		<Unit filename="Sources/Global.h" />
+		<Unit filename="Sources/MainFrame.cpp" />
+		<Unit filename="Sources/MainFrame.h" />
+		<Unit filename="Sources/OptionBox.cpp" />
+		<Unit filename="Sources/OptionBox.h" />
+		<Unit filename="Sources/PersoBox.cpp" />
+		<Unit filename="Sources/PersoBox.h" />
+		<Unit filename="Sources/XlgOptBox.cpp" />
+		<Unit filename="Sources/XlgOptBox.h" />
+		<Unit filename="Sources/ressources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

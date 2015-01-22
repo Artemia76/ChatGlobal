@@ -1,0 +1,29 @@
+static const char *home_xpm[] = {
+/* columns rows colors chars-per-pixel */
+"20 20 4 1",
+"  c None",
+"a c Black",
+"c c #A52A2A",
+"d c #EF993A",
+/* pixels */
+"                    ",
+"                    ",
+"         aa         ",
+"    a   aaaa        ",
+"    a  aadcca       ",
+"    a aadddcca      ",
+"    aaadddddcca     ",
+"    aadddddddcca    ",
+"   aaddddddddccca   ",
+"  aaaddddddccccaaa  ",
+"    addddddddcca    ",
+"    adddaaaddcca    ",
+"    addda addcca    ",
+"    addda addcca    ",
+"    addda addcca    ",
+"    addda addcca    ",
+"    aaaaa aaaaaa    ",
+"                    ",
+"                    ",
+"                    "
+};
