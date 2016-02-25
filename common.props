@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <AW_PATH>E:\devel\activeworlds\</AW_PATH>
+    <WX_BASE>30</WX_BASE>
+    <UPX_PATH>E:\devel\upx\</UPX_PATH>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="AW_PATH">
+      <Value>$(AW_PATH)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="WX_BASE">
+      <Value>$(WX_BASE)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UPX_PATH">
+      <Value>$(UPX_PATH)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
