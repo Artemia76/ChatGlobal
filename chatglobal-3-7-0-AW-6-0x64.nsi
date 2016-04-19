@@ -50,8 +50,8 @@
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "CG-3-7_AW_6-0.exe"
-InstallDir "$PROGRAMFILES\ChatGlobal"
+OutFile "CG-3-7_AW_6-0_x64.exe"
+InstallDir "$PROGRAMFILES64\ChatGlobal"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
 ShowUnInstDetails show
@@ -63,11 +63,11 @@ FunctionEnd
 Section "SectionPrincipale" SEC01
   SetOutPath "$INSTDIR"
   SetOverwrite on
-  File ".\ChatGlobal.exe"
+  File ".\x64\Release101\ChatGlobal.exe"
   CreateDirectory "$SMPROGRAMS\ChatGlobal"
   CreateShortCut "$SMPROGRAMS\ChatGlobal\ChatGlobal.lnk" "$INSTDIR\ChatGlobal.exe"
   CreateShortCut "$DESKTOP\ChatGlobal.lnk" "$INSTDIR\ChatGlobal.exe" 
-  File ".\aw64.dll"
+  File ".\x64\Release101\aw64.dll"
   File "AW_SDK_License_(aw.dll).rtf"
   File "readme.txt"
   SetOutPath "$INSTDIR\lng\fr"

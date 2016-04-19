@@ -5,6 +5,7 @@
     <AW_PATH>E:\devel\activeworlds\</AW_PATH>
     <WX_BASE>30</WX_BASE>
     <UPX_PATH>E:\devel\upx\</UPX_PATH>
+    <WXWIN>E:\devel\wxWidgets-3.0.2</WXWIN>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
@@ -26,6 +27,9 @@
     </BuildMacro>
     <BuildMacro Include="UPX_PATH">
       <Value>$(UPX_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WXWIN">
+      <Value>$(WXWIN)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>
