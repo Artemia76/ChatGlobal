@@ -3,9 +3,9 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <AW_PATH>E:\devel\activeworlds\</AW_PATH>
-    <WX_BASE>30</WX_BASE>
+    <WX_BASE>31</WX_BASE>
     <UPX_PATH>E:\devel\upx\</UPX_PATH>
-    <WXWIN>E:\devel\wxWidgets-3.0.2</WXWIN>
+    <WXWIN>E:\devel\wxWidgets-3.1.0</WXWIN>
   </PropertyGroup>
   <PropertyGroup>
     <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
