@@ -4,11 +4,13 @@
   <PropertyGroup Label="UserMacros">
     <AW_PATH>E:\devel\activeworlds\</AW_PATH>
     <WX_BASE>31</WX_BASE>
-    <UPX_PATH>E:\devel\upx\</UPX_PATH>
-    <WXWIN>E:\devel\wxWidgets-3.1.0</WXWIN>
+    <UPX_PATH>E:\devel\utils\</UPX_PATH>
+    <WXWIN>E:\devel\wxwidgets</WXWIN>
+    <WX_LIB_X64>vc_x64_lib</WX_LIB_X64>
+    <WX_LIB>vc_dll</WX_LIB>
   </PropertyGroup>
   <PropertyGroup>
-    <IntDir>$(Platform)\$(Configuration)\obj\</IntDir>
+    <IntDir>$(Platform)\$(Configuration)\obj</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <PostBuildEvent>
@@ -30,6 +32,12 @@
     </BuildMacro>
     <BuildMacro Include="WXWIN">
       <Value>$(WXWIN)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WX_LIB_X64">
+      <Value>$(WX_LIB_X64)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WX_LIB">
+      <Value>$(WX_LIB)</Value>
     </BuildMacro>
   </ItemGroup>
 </Project>

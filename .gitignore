@@ -5,6 +5,9 @@
 *.suo
 *.user
 *.sln.docstates
+*.exe
+*.zip
+*.7z
 
 # Build results
 
@@ -154,3 +157,7 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.vs
+Win32
+x64
+*.vcxproj.filters
