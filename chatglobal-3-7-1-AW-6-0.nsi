@@ -4,8 +4,8 @@
 
 ; HM NIS Edit Wizard helper defines
 !define PRODUCT_NAME "Chat Global"
-!define PRODUCT_VERSION "3.7.0 AW 6.0"
-!define PRODUCT_PUBLISHER "Neophile (c)2004-2014"
+!define PRODUCT_VERSION "3.7.1 AW 6.0"
+!define PRODUCT_PUBLISHER "Neophile (c)2004-2020"
 !define PRODUCT_WEB_SITE "http://www.abyssia.fr"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\ChatGlobal.exe"
 !define PRODUCT_UNINST_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
@@ -50,8 +50,8 @@
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "CG-3-7_AW_6-0_x64.exe"
-InstallDir "$PROGRAMFILES64\ChatGlobal"
+OutFile "CG-3-7_AW_6-0.exe"
+InstallDir "$PROGRAMFILES32\ChatGlobal"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
 ShowUnInstDetails show
@@ -63,11 +63,11 @@ FunctionEnd
 Section "SectionPrincipale" SEC01
   SetOutPath "$INSTDIR"
   SetOverwrite on
-  File ".\x64\Release101\ChatGlobal.exe"
+  File ".\Win32\Release101\ChatGlobal.exe"
   CreateDirectory "$SMPROGRAMS\ChatGlobal"
   CreateShortCut "$SMPROGRAMS\ChatGlobal\ChatGlobal.lnk" "$INSTDIR\ChatGlobal.exe"
   CreateShortCut "$DESKTOP\ChatGlobal.lnk" "$INSTDIR\ChatGlobal.exe" 
-  File ".\x64\Release101\aw64.dll"
+  File ".\Win32\Release101\aw.dll"
   File "AW_SDK_License_(aw.dll).rtf"
   File "readme.txt"
   SetOutPath "$INSTDIR\lng\fr"

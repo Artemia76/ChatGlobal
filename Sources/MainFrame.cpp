@@ -392,7 +392,7 @@ void CMainFrame::OnCielColo (wxCommandEvent& WXUNUSED(event))
 
 void CMainFrame::OnAide (wxCommandEvent& WXUNUSED(event))
 {
-	wxLaunchDefaultBrowser (_("http://www.symerion.fr/abyssia/chatglobal.php"));
+	wxLaunchDefaultBrowser (_("https://sourceforge.net/projects/chatglobal/"));
 
 }
 
@@ -400,7 +400,7 @@ void CMainFrame::OnAide (wxCommandEvent& WXUNUSED(event))
 
 void CMainFrame::OnForum (wxCommandEvent& WXUNUSED(event))
 {
-	wxLaunchDefaultBrowser (_("http://www.symerion.fr/forum"));
+	wxLaunchDefaultBrowser (_("https://sourceforge.net/projects/chatglobal/"));
 }
 
 //------------------------------------------------------------------------------

@@ -132,37 +132,37 @@ CPersoDial::CPersoDial
 // Affectation des Items
 
 	Ligne1->Add( Check1, 0, wxALIGN_CENTER|wxALL, 5 );
-	Ligne1->Add( Edit1, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	Ligne1->Add( Edit1, 0, wxGROW|wxALL, 5 );
 	Ligne1->Add( Couleur1, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Ligne1, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Ligne1, 0, wxGROW|wxALL, 5 );
 	Ligne2->Add( Check2, 0, wxALIGN_CENTER|wxALL, 5 );
-	Ligne2->Add( Edit2, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	Ligne2->Add( Edit2, 0, wxGROW|wxALL, 5 );
 	Ligne2->Add( Couleur2, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Ligne2, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Ligne2, 0, wxGROW|wxALL, 5 );
 	Ligne3->Add( Check3, 0, wxALIGN_CENTER|wxALL, 5 );
-	Ligne3->Add( Edit3, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	Ligne3->Add( Edit3, 0, wxGROW|wxALL, 5 );
 	Ligne3->Add( Couleur3, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Ligne3, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Ligne3, 0, wxGROW|wxALL, 5 );
 
 	Ligne4->Add( Check4, 0, wxALIGN_CENTER|wxALL, 5 );
-	Ligne4->Add( Edit4, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	Ligne4->Add( Edit4, 0, wxGROW|wxALL, 5 );
 	Ligne4->Add( Couleur4, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Ligne4, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Ligne4, 0, wxGROW|wxALL, 5 );
 
 	Ligne5->Add( Check5, 0, wxALIGN_CENTER|wxALL, 5 );
-	Ligne5->Add( Edit5, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	Ligne5->Add( Edit5, 0, wxGROW|wxALL, 5 );
 	Ligne5->Add( Couleur5, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Ligne5, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Ligne5, 0, wxGROW|wxALL, 5 );
 
 	Bridage->Add( ChatBride, 0, wxALIGN_CENTER|wxALL, 5 );
 	Bridage->Add( ChatDistance, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( Bridage, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( Bridage, 0, wxGROW|wxALL, 5 );
 
 	ExtBridage->Add( ExtBride, 0, wxALIGN_CENTER|wxALL, 5 );
 	ExtBridage->Add( ExtDistance, 0, wxALIGN_CENTER|wxALL, 5 );
 	ExtBridage->Add( Text1, 0, wxALIGN_CENTER|wxALL, 5 );
 	ExtBridage->Add( ExtCoord, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add( ExtBridage, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add( ExtBridage, 0, wxGROW|wxALL, 5 );
 
 	AntiJog->Add(EnaAntiJogger, 0, wxALIGN_CENTER|wxALL, 5 );
 	AntiJog->Add(AntiJogTempsTxt, 0, wxALIGN_CENTER|wxALL, 5 );
@@ -171,18 +171,18 @@ CPersoDial::CPersoDial
 	AntiJog->Add(AntiJogNb, 0, wxALIGN_CENTER|wxALL, 5 );
 	AntiJog->Add(AntiJogEjecTxt, 0, wxALIGN_CENTER|wxALL, 5 );
 	AntiJog->Add(AntiJogEjec, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add(AntiJog, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add(AntiJog, 0, wxGROW|wxALL, 5 );
 
 	AntiJog2->Add(AntiJogMessTxt, 0, wxALIGN_CENTER|wxALL, 5 );
-	AntiJog2->Add(AntiJogMess, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	AntiJog2->Add(AntiJogMess, 0, wxGROW|wxALL, 5 );
 	AntiJog2->Add(AntiJogBout, 0, wxALIGN_CENTER|wxALL, 5 );
-	Boite->Add(AntiJog2, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boite->Add(AntiJog2, 0, wxGROW|wxALL, 5 );
 
-	Boutons->Add( 400, 20, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
-	Boutons->Add( Annuler, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	Boutons->Add( 30, 20, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
-	Boutons->Add( Ok, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	Boite->Add( Boutons, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	Boutons->Add( 400, 20, 0, wxGROW|wxALL, 5 );
+	Boutons->Add( Annuler, 0, wxGROW|wxALL, 5 );
+	Boutons->Add( 30, 20, 0, wxGROW|wxALL, 5 );
+	Boutons->Add( Ok, 0, wxGROW|wxALL, 5 );
+	Boite->Add( Boutons, 0, wxGROW|wxALL, 5 );
 
 	SetAutoLayout (true);
 	SetSizer( Boite );

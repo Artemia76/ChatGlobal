@@ -1,7 +1,7 @@
-CHATGLOBAL version 3.7
+CHATGLOBAL version 3.7.1
 
 contrat de licence
-© 2004-2014 Neophile
+© 2004-2020 Neophile
 (Tous droits réservés.)
 Ce logiciel est protégé par les lois relatives au droit d'auteur et par les conventions internationales.
 Ce programme et sa documentation peuvent être redistribués librement pourvu que :

@@ -170,11 +170,11 @@ CCColBox::CCColBox
 	item57 = new wxButton( this, wxID_CANCEL, _("Cancel"), wxDefaultPosition, wxDefaultSize, 0 );
 	item58 = new wxButton( this, wxID_OK, _T("OK"), wxDefaultPosition, wxDefaultSize, 0 );
 
-	item2->Add( item3, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item2->Add( item4, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item2->Add( item5, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item2->Add( item6, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item2->Add( item7, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item2->Add( item3, 0, wxALL, 5 );
+	item2->Add( item4, 0, wxALL, 5 );
+	item2->Add( item5, 0, wxALL, 5 );
+	item2->Add( item6, 0, wxALL, 5 );
+	item2->Add( item7, 0, wxALL, 5 );
 	item1->Add( item2, 0, wxALIGN_CENTER, 0 );
 	item8->Add( item9, 0, wxALIGN_CENTER, 0 );
 	item8->Add( item10, 0, wxALIGN_CENTER|wxALL, 5 );
@@ -227,7 +227,7 @@ CCColBox::CCColBox
 	item0->Add( item1, 0, wxALIGN_CENTER|wxALL, 5 );
 	item56->Add( item57, 0, wxALIGN_CENTER|wxALL, 5 );
 	item56->Add( item58, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item56, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item0->Add( item56, 0, wxALIGN_RIGHT|wxALL, 5 );
 	SetAutoLayout (true);
 	SetSizer( item0 );
 	item0->Fit(this);

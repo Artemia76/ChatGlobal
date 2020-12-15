@@ -89,34 +89,34 @@ COptDial::COptDial
 // Affectation des Items
 
 	item1->Add( item2, 0, wxALIGN_CENTER|wxALL, 5 );
-	item1->Add( item3, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	item1->Add( item3, 0, wxGROW|wxALL, 5 );
 	item1->Add( item4, 0, wxALIGN_CENTER|wxALL, 5 );
 	item1->Add( item5, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item1, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item0->Add( item1, 0, wxGROW|wxALL, 5 );
 	item6->Add( item7, 0, wxALIGN_CENTER|wxALL, 5 );
 	item6->Add( item8, 0, wxALIGN_CENTER|wxALL, 5 );
 	item6->Add( item9, 0, wxALIGN_CENTER|wxALL, 5 );
 	item6->Add( item10, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item6, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item0->Add( item6, 0, wxGROW|wxALL, 5 );
 	item11->Add( item12, 0, wxALIGN_CENTER|wxALL, 5 );
 	item11->Add( item13, 0, wxALIGN_CENTER|wxALL, 5 );
 	item11->Add( item14, 0, wxALIGN_CENTER|wxALL, 5 );
 	item11->Add( item15, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item11, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item0->Add( item11, 0, wxGROW|wxALL, 5 );
 	item20->Add( item21, 0, wxALIGN_CENTER|wxALL, 5 );
 	item20->Add( item22, 0, wxALIGN_CENTER|wxALL, 5 );
 	item20->Add( item23, 0, wxALIGN_CENTER|wxALL, 5 );
 	item20->Add( item24, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item20, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item25->Add( 30, 20, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
-	item25->Add( item26, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item0->Add( item25, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item16->Add( 30, 20, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
-	item16->Add( item19, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
-	item16->Add( 30, 20, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	item0->Add( item20, 0, wxGROW||wxALL, 5 );
+	item25->Add( 30, 20, 0, wxGROW|wxALL, 5 );
+	item25->Add( item26, 0, wxGROW|wxALL, 5 );
+	item0->Add( item25, 0, wxGROW|wxALL, 5 );
+	item16->Add( 30, 20, 0, wxGROW|wxALL, 5 );
+	item16->Add( item19, 0, wxGROW|wxALL, 5 );
+	item16->Add( 30, 20, 0, wxGROW|wxALL, 5 );
 	item16->Add( item17, 0, wxALIGN_CENTER|wxALL, 5 );
 	item16->Add( item18, 0, wxALIGN_CENTER|wxALL, 5 );
-	item0->Add( item16, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	item0->Add( item16, 0, wxGROW|wxALL, 5 );
 
 	SetAutoLayout ( TRUE );
 	SetSizer( item0 );

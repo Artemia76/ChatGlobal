@@ -127,6 +127,7 @@ void CBot::Connection(bool flag)
 		Users.clear();
 	    aw_bool_set(AW_WORLD_DISABLE_CHAT,false);
 	    aw_world_attributes_change ();
+		aw_wait(0);
 		aw_destroy();
 		Instance=0;
 		Logger->Log(ID,_("Disconnected from Universe "),_T("BLUE"));

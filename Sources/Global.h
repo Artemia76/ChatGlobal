@@ -37,7 +37,7 @@
 
 //#define AUTRE_UNIV
 
-static const wxString CGVersion = _T("ChatGlobal V3.7.0 ");
+static const wxString CGVersion = _T("ChatGlobal V3.7.1 ");
 
 #if AW_BUILD<77
 static const wxString CGRevision = CGVersion + _(" For ") + _T("AW 3.6");
@@ -57,7 +57,7 @@ static const wxString CGRevision = CGVersion + _(" For ") + _T("AW 3.6");
 	#endif
 #endif
 
-static const wxString CGCopyright = _T("Neophile (c)2003-2014");
+static const wxString CGCopyright = _T("Neophile (c)2003-2020");
 
 #ifdef SERVEUR
 static const int NombreBot = 10;
