@@ -3,10 +3,10 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <AW_PATH>E:\devel\activeworlds\</AW_PATH>
-    <WX_BASE>31</WX_BASE>
+    <WX_BASE>32</WX_BASE>
     <UPX_PATH>E:\devel\utils\</UPX_PATH>
     <WXWIN>E:\devel\wxwidgets</WXWIN>
-    <WX_LIB_X64>vc_x64_lib</WX_LIB_X64>
+    <WX_LIB_X64>vc_x64_dll</WX_LIB_X64>
     <WX_LIB>vc_dll</WX_LIB>
   </PropertyGroup>
   <PropertyGroup>
