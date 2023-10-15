@@ -1,0 +1,1954 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: BackupAw 1.4.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-28 11:28+0100\n"
+"PO-Revision-Date: 2012-07-28 11:29+0100\n"
+"Last-Translator: Peschiutta <fgp76@free.fr>\n"
+"Language-Team: English <neophile@abyssia.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ..\\..\\\n"
+"X-Poedit-SearchPath-0: .\\Sources\n"
+
+#: .\Sources/AboutBox.cpp:47
+msgid ""
+"\n"
+"By "
+msgstr ""
+"\n"
+"By "
+
+#: .\Sources/AboutBox.cpp:95
+msgid "Uses xelagot server:"
+msgstr "Uses xelagot server:"
+
+#: .\Sources/AboutBox.cpp:110
+msgid "OK"
+msgstr "OK"
+
+#: .\Sources/CAntiJog.cpp:55
+#, c-format
+msgid "The Jogger %n has been ejected."
+msgstr "The Jogger %n has been ejected."
+
+#: .\Sources/CBot.cpp:58
+msgid "Recording Started"
+msgstr "Recording Started"
+
+#: .\Sources/CBot.cpp:67
+msgid "Recording Stopped"
+msgstr "Recording Stopped"
+
+#: .\Sources/CBot.cpp:102
+msgid "Unable to create instance, Reason : "
+msgstr "Unable to create instance, Reason : "
+
+#: .\Sources/CBot.cpp:108
+msgid "Instance Initialized."
+msgstr ""
+
+#: .\Sources/CBot.cpp:130
+msgid "Disconnected from Universe "
+msgstr ""
+
+#: .\Sources/CBot.cpp:146
+msgid "Unable to join the universe, Reason :"
+msgstr ""
+
+#: .\Sources/CBot.cpp:152
+msgid "Connected on Universe"
+msgstr ""
+
+#: .\Sources/CBot.cpp:168
+msgid "Unable to connect on world "
+msgstr "Unable to connect on world "
+
+#: .\Sources/CBot.cpp:170
+msgid ",Reason: "
+msgstr ",Reason: "
+
+#: .\Sources/CBot.cpp:179
+msgid "Connected on world "
+msgstr ""
+
+#: .\Sources/CBot.cpp:268
+#, c-format
+msgid "A reconnection will be tryed in %d sec."
+msgstr ""
+
+#: .\Sources/CBot.cpp:276
+#: .\Sources/CXelagServer.cpp:279
+msgid "End of attempts"
+msgstr ""
+
+#: .\Sources/CBot.cpp:305
+msgid "Connection lost with universe "
+msgstr ""
+
+#: .\Sources/CBot.cpp:306
+msgid "Connection lost with the world "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:67
+#, c-format
+msgid "Welcome on the ChatGlobal %n."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:73
+#, c-format
+msgid "%n incoming."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:79
+#, c-format
+msgid "%n outgoing"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:85
+#, c-format
+msgid "Great %n, good Kling on %c !!!, you have now %p points!"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:91
+#, c-format
+msgid "Great %n, good Kloug on %c !!!, you have now %p points!"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:177
+msgid " by "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:228
+msgid "ChatGLobal Help: (to use commands, place them in first followed by a space of the sentence)"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:229
+msgid "/me\t:Speak without tabulation"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:230
+msgid "/bold\t:Speak bold"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:231
+msgid "/ita\t:Speak italic"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:232
+msgid "//\t:Cancel all the commands on sentence"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:233
+msgid "/color Rx Gy Bz\t:Use the RGB colour"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:234
+msgid "/chat pink\t:Use the \"pink\" named colour"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:235
+msgid "/rejoindre \"nick\"\t:Join a person on the world"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:236
+msgid "/global on\t:Set you tchat mode in global"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:237
+msgid "/global off\t:Set your tchat mode in local"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:238
+msgid "/join on\t:Enable people to join you"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:239
+msgid "/join off\t:Disable people to join you"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:240
+msgid "/info\t:Give you some information about your modes"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:241
+msgid ""
+"/avat x\t:Change your avatar with the number x (0 - 255)\n"
+"\tIf you are tourist , you will be alone to see your avatar"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:244
+msgid "For Public Speaker:"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:245
+msgid "/boldon\t:Enable the permanent bold mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:246
+msgid "/boldoff\t:Disable the permanent bold mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:247
+msgid "/itaon\t:Enable the permanent italic mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:248
+msgid "/itaoff\t:Disable the permanent italic mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:249
+msgid "/titre\t:Set the nobility title (before the nick)"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:250
+msgid "/tion\t:Enable the nobility title"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:251
+msgid "/tioff\t:Disable the nobility title"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:252
+msgid "/quali\t:Set the nobility quality (After the nick)"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:253
+msgid "/quon\t:Enable the nobility quality"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:254
+msgid "/quoff\t:Disable the nobility quality"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:258
+msgid "For Moderator:"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:259
+msgid "/muteon nom\t:Mute the user nom"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:260
+msgid "/muteoff nom\t:Unmute the user nom"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:261
+msgid "/listmute\t:List muted users"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:262
+msgid "/list\t:Give number of user on the world"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:266
+msgid "/addcolor name Rx Gy By\t:Set a new named colour"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:267
+msgid "/delcolor nom\t:Erase a named colour"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:268
+msgid "/cgon\t:Conect the T'Chat streaming on xelag server"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:269
+msgid "/cgoff\t:Disconnect the T'Chat streaming from xelagot server"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:270
+msgid "/stat\t:Give the DB statistics"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:272
+msgid "For more information , please read the online documentation :"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:280
+msgid "Kling results:\t1 - "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:283
+#: .\Sources/CBotCG.cpp:295
+#, c-format
+msgid ""
+" with %d points.\n"
+"\t2 - "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:287
+#: .\Sources/CBotCG.cpp:299
+#, c-format
+msgid ""
+" with %d points.\n"
+"\t3 - "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:291
+#, c-format
+msgid ""
+" with %d points.\n"
+"Kloug results:\n"
+"\t1 - "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:303
+#, c-format
+msgid " with %d points."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:312
+#, c-format
+msgid ""
+"You have %d points for Kling.\n"
+"You have %d points for Kloug."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:331
+msgid "You are writing on this color now."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:342
+msgid "Unknown color... Try another syntax."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:356
+msgid "You are writing on this color : "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:366
+msgid "Please check the name"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:371
+#: .\Sources/CBotCG.cpp:376
+msgid "The user "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:371
+msgid " not exist."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:376
+msgid " don't want to be joined."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:392
+msgid "You has been joined by "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:401
+msgid "The Global function is disable"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:405
+msgid "You are in global mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:414
+msgid "The global function is enable"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:418
+msgid "You are in local mode"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:426
+#: .\Sources/CBotCG.cpp:446
+msgid "You are joignable"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:434
+#: .\Sources/CBotCG.cpp:448
+msgid "You aren't joignable"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:442
+msgid "You are speaking in global mode\n"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:444
+msgid "You are speaking in local mode\n"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:449
+msgid ""
+"\n"
+"You are Public Speaker"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:450
+msgid ""
+"\n"
+"You are keeper"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:451
+msgid ""
+"\n"
+"You are Eminent"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:464
+msgid "You choose the avatar number "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:475
+msgid "You activated Permanent Bold."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:483
+msgid "You desactivated Permanent Bold."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:491
+msgid "You activated Permanent Italic."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:499
+msgid "You desactivated Permanent Italic."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:507
+msgid "You activated your nobility title."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:515
+msgid "You desactivated your nobility title."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:523
+msgid "You activated your nobility quality."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:531
+msgid "You desactivated your nobility quality."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:541
+msgid "You setted your nobility title."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:551
+msgid "You setted your nobility quality."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:558
+msgid "The global tchat mode is stoped."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:568
+msgid "The global tchat mode is run."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:583
+msgid "All Kling Kloug results cleaned"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:584
+msgid "Result Erased by : "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:601
+msgid "This color name already exist."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:606
+msgid "The color database is full, please purge some unused colors before."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:609
+msgid "The color has been indeed added."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:618
+msgid "This Color doesn't exist"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:622
+msgid "This color has been indeed removed."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:624
+msgid "Error in database."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:642
+#, c-format
+msgid ""
+"Stat of DB:\n"
+"- %d users.\n"
+"- %d%% of Citizen.\n"
+"- %d%% of tourists.\n"
+"- Frequentation average index: %d\n"
+"- Kling Average: %d\n"
+"- Kloug Average: %d\n"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:661
+msgid "End of list"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:662
+msgid "Nobody in this world."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:665
+msgid "List of users :\n"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:683
+msgid " has been muted."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:685
+#: .\Sources/CBotCG.cpp:700
+#: .\Sources/CBotCG.cpp:734
+msgid "Unknown user"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:698
+msgid " has been unmuted."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:708
+msgid "Empty list."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:711
+msgid "List of muted users:\n"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:729
+msgid "Ejected by "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:732
+msgid " has been ejected while 1 day"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:759
+msgid "Bad Command"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:792
+#: .\Sources/CBotCG.cpp:869
+#: .\Sources/CBotCG.cpp:875
+msgid " on "
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:862
+msgid " connected on ChatGlobal Network"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:865
+msgid " disconnected from ChatGlobal Network"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:871
+msgid " incoming."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:877
+msgid " outgoing."
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:1002
+msgid "Unable process ejection by IP method"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:1003
+msgid "User ejected by IP method"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:1015
+msgid "Unable process ejection by Citizen method"
+msgstr ""
+
+#: .\Sources/CBotCG.cpp:1016
+msgid "User ejected by Citizen method"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:87
+msgid "Morning:"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:88
+msgid "Day:"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:89
+msgid "Evening:"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:90
+msgid "Night:"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:92
+msgid "North"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:101
+msgid "South"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:112
+msgid "East"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:122
+msgid "West"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:132
+msgid "Zenith"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:142
+msgid "Nadir"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:152
+msgid "Amb"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:162
+msgid "Direc"
+msgstr ""
+
+#: .\Sources/CColBox.cpp:172
+#: .\Sources/CHorBox.cpp:107
+msgid "Cancel"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:50
+msgid "Start of sun rising :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:58
+msgid "End of sun rising :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:66
+msgid "Start of sun descent :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:74
+msgid "End of sun descent :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:81
+msgid "Sun"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:84
+#: .\Sources/CHorBox.cpp:96
+msgid "Texture :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:87
+#: .\Sources/CHorBox.cpp:99
+msgid "Mask :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:90
+#: .\Sources/CHorBox.cpp:102
+msgid "Size :"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:93
+msgid "Moon"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:199
+msgid "One of timing goes wrong, please check that time are following"
+msgstr ""
+
+#: .\Sources/CHorBox.cpp:200
+msgid "Error"
+msgstr ""
+
+#: .\Sources/CListUser.cpp:60
+msgid "Users"
+msgstr ""
+
+#: .\Sources/CListUser.cpp:335
+#, c-format
+msgid "Citizen : %d"
+msgstr ""
+
+#: .\Sources/CListUser.cpp:337
+#, c-format
+msgid "Privs : %d"
+msgstr ""
+
+#: .\Sources/CListUser.cpp:341
+#, c-format
+msgid "Altitude =%d m"
+msgstr ""
+
+#: .\Sources/CListUser.cpp:344
+msgid "Mute"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:72
+msgid "Exit ChatGlobal"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:72
+msgid "Close this App"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:73
+msgid "Show ChatGlobal"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:73
+msgid "Recall to ForeGround"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:74
+msgid "Hide the ChatGlobal"
+msgstr ""
+
+#: .\Sources/CTaskBar.cpp:74
+msgid "Hide this app"
+msgstr ""
+
+#: .\Sources/Ctrlaw.cpp:94
+msgid "Error)"
+msgstr ""
+
+#: .\Sources/Ctrlaw.cpp:95
+msgid "Unable to init the SDK, Reason :"
+msgstr ""
+
+#: .\Sources/Ctrlaw.cpp:274
+msgid "Avatar_Delete_Error: Name="
+msgstr ""
+
+#: .\Sources/Ctrlaw.cpp:274
+msgid ", Session="
+msgstr ""
+
+#: .\Sources/Ctrlaw.cpp:541
+#, fuzzy
+msgid "Unable to resolve IP, Reason:"
+msgstr "Unable to create instance, Reason : "
+
+#: .\Sources/Ctrlaw.cpp:596
+msgid "A new day happen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:165
+msgid " : New Log File."
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:176
+msgid " : Unable to open the log file."
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:216
+msgid "Tchat Recording stopped"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:222
+msgid "TChat Recording Started"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:238
+msgid "Citizen Ship Expired"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:241
+msgid "Land Limit Exceeded"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:244
+msgid "No Such Citizen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:247
+msgid "Message Length Bad"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:250
+msgid "License Password Contains Space"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:253
+msgid "License Password Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:256
+msgid "License Password Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:259
+msgid "License Range Too Large"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:262
+msgid "License Range Too Small"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:265
+msgid "License Users Too Large"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:268
+msgid "License Users Too Small"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:271
+msgid "License Contains Invalid Char"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:274
+msgid "Invalid Password"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:277
+msgid "Unable To Mail Back Number"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:280
+msgid "License World Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:283
+msgid "License World Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:286
+msgid "Server Out Of Memory"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:289
+msgid "Invalid World"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:292
+msgid "Server Outdated"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:295
+msgid "World Already Started"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:298
+msgid "No Such World"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:301
+msgid "Not Logged In"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:304
+msgid "Unauthorized"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:307
+msgid "World Already Exists"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:310
+msgid "No Such License"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:313
+msgid "Identity Already In Use"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:316
+msgid "Unable To Report Location"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:319
+msgid "Invalid Email"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:322
+msgid "No Such Acting Citizen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:325
+msgid "Acting Password Invalid"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:328
+msgid "Universe Full"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:331
+msgid "Billing Timeout"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:334
+msgid "Billing Recv Failed"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:337
+msgid "Billing Response Invalid"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:340
+msgid "Billing Rejected"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:343
+msgid "Billing_Blocked"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:346
+msgid "Too Many Worlds"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:349
+msgid "Must Upgrade"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:352
+msgid "Bot Limit Exceeded"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:355
+msgid "World_Expired"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:358
+msgid "Citizen Does Not Expire"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:361
+msgid "License Sarts With Number"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:364
+msgid "No Such Ejection"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:367
+msgid "No Such Session"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:370
+msgid "Ejection Expired"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:373
+msgid "Acting Citizen Expired"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:376
+msgid "Already_Started"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:379
+msgid "World Running"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:382
+msgid "World Not Set"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:385
+msgid "No Such Cell"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:388
+msgid "No Registry"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:391
+msgid "Can't Open Registry"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:394
+msgid "Citizen_Disabled"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:397
+msgid "World Disabled"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:400
+msgid "Beta Required"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:403
+msgid "Acting Citizen Disabled"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:406
+msgid "Invalid Uuser Count"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:409
+msgid "Private World"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:412
+msgid "No Tourists"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:415
+msgid "EMail Contains Invalid Char"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:418
+msgid "EMail Ends With Blank"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:421
+msgid "EMail Missing Dot"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:424
+msgid "EMail Missing At"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:427
+msgid "EMail Starts With Blank"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:430
+msgid "EMail Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:433
+msgid "EMail Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:436
+msgid "Name Already Used"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:439
+msgid "Name Contains Nonalphanumeric Char"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:442
+msgid "Name Contains Invalid Blank"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:445
+msgid "Name Doesn't Exist"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:448
+msgid "Name Ends With Blank"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:451
+msgid "Name Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:454
+msgid "Name Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:457
+msgid "Name Unused"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:460
+msgid "Password Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:463
+msgid "Password Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:466
+msgid "Password Wrong"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:469
+msgid "Unable To Delete Name"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:472
+msgid "Unable To Get Citizen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:475
+msgid "Unable To Insert Citizen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:478
+msgid "Unable To Insert Name"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:481
+msgid "Unable To Put Citizen Count"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:484
+msgid "Unable To Delete Citizen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:487
+msgid "Number Already Used"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:490
+msgid "Number Out Of Range"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:493
+msgid "Privilege Password Is Too Short"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:496
+msgid "Privilege Password Is Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:499
+msgid "Not Change Owner"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:502
+msgid "Can't Find Old Element"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:505
+msgid "Unable To Change Attribute"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:508
+msgid "Can't Change Owner"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:511
+msgid "Imposter"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:514
+msgid "Invalid Request"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:517
+msgid "Can't Build Here"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:520
+msgid "Encroaches"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:523
+msgid "No Such Object"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:526
+msgid "Not Delete Owner"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:529
+msgid "Too Many Bytes"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:532
+msgid "Unable To Store"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:535
+msgid "Unregistered Object"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:538
+msgid "Element Already Exists"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:541
+msgid "Restricted Command"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:544
+msgid "No Build Rights"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:547
+msgid "Out Of Bounds"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:550
+msgid "Restricted Object"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:553
+msgid "Restricted Area"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:556
+msgid "Out Of Memory"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:559
+msgid "Not Yet"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:562
+msgid "Timeout"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:565
+msgid "Null Pointer"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:568
+msgid "Unable To Contact Universe"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:571
+msgid "Unable To Contact World"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:574
+msgid "Invalid World Name"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:577
+msgid "Send Failed"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:580
+msgid "Receive Failed"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:583
+msgid "Stream Empty"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:586
+msgid "Stream Message Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:589
+msgid "World Name Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:592
+msgid "Message Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:595
+msgid "Too Many Resets"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:598
+msgid "Unable To Create Socket"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:601
+msgid "Unable To Connect"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:604
+msgid "Unable To Set NonBlocking"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:607
+msgid "Can't Open Stream"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:610
+msgid "Can't Write Stream"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:613
+msgid "Can't Close Stream"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:616
+msgid "No Connection"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:619
+msgid "Unable To Initialize Network"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:622
+msgid "Incorrect Message Length"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:625
+msgid "Not Initialized"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:628
+msgid "No Instance"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:631
+msgid "Out Buffer Full"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:634
+msgid "Invalid Callback"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:637
+msgid "Invalid Attribute"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:640
+msgid "Type Mismatch"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:643
+msgid "String Too Long"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:646
+msgid "Read Only"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:649
+msgid "Unable To Register Resolve"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:652
+msgid "Invalid Instance"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:655
+msgid "Version Mismatch"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:658
+msgid "In Buffer Full"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:661
+msgid "Protocol Error"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:664
+msgid "Query In Progress"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:667
+msgid "World Full"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:670
+msgid "Ejected"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:673
+msgid "Not Welcome"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:676
+msgid "Unable To Bind"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:679
+msgid "Unable To Listen"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:682
+msgid "Unable To Accept"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:685
+msgid "Connection Lost"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:688
+msgid "No Stream"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:691
+msgid "Not Available"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:694
+msgid "Old Universe"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:697
+msgid "Old World"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:700
+msgid "World Not Running"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:703
+msgid "Invalid Argument"
+msgstr ""
+
+#: .\Sources/CtrlLog.cpp:706
+msgid "Unknow Raison Code"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:133
+msgid "Connected on the remote host"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:136
+msgid "Xelag Server Connection lost.Reason : "
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:140
+msgid "No Error."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:143
+msgid "Invalid operation."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:146
+msgid "Input/Output error."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:149
+msgid "Invalid address."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:152
+msgid "Invalid socket."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:155
+msgid "No corresponding host."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:158
+msgid "Invalid port."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:161
+msgid "Timeout."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:164
+msgid "TimeOut Expired."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:167
+msgid "Memory exhausted."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:170
+msgid "Unknown."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:238
+msgid "Host Connection..."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:244
+msgid "Disconnected from Xelag server"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:271
+#, c-format
+msgid "A reconnection will be tryed in %d s."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:314
+msgid "The Chat network mode is alive.\n"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:320
+msgid "The Chat network mode is already alive.\n"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:333
+msgid "The Chat network mode is stopped.\n"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:341
+msgid "The Chat network mode is already stopped.\n"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:368
+msgid "Bad Login : Check the conection setting for the Xelag server"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:372
+msgid "Send login to Xelag Server..."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:381
+msgid "Bad PassWord : Check the conection setting for the Xelag server"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:385
+msgid "Send the password to Xelag Server..."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:391
+msgid "Unable to connect on Xelag Server : Someone is already connected with this login"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:396
+msgid "Connected on xelag server"
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:471
+msgid "Hello "
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:479
+msgid "Already connected on "
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:484
+msgid "Connecting on world "
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:495
+msgid "Already Disconnected."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:501
+msgid "Disconnecting."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:510
+msgid "Welcome Message changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:518
+msgid "The color of welcome message has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:526
+msgid "Incoming Message changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:534
+msgid "The Incoming message color has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:542
+msgid "Outgoing message changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:550
+msgid "The Outgoing message color has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:558
+msgid "Kling winner message changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:566
+msgid "The kling winner message color has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:574
+msgid "Kloug winner message changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:582
+msgid "The Kloug winner message color has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:591
+msgid "Citizen account has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:599
+msgid "Privilege Password has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:607
+msgid "The world has been changed."
+msgstr ""
+
+#: .\Sources/CXelagServer.cpp:627
+msgid "The bot name has been changed."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:106
+msgid " running."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:115
+msgid "Bot..."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:115
+msgid "Select a bot"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:117
+msgid "E&xit"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:117
+msgid "Exiting the ChatGLobal"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:119
+#: .\Sources/MainFrame.cpp:122
+#: .\Sources/MainFrame.cpp:497
+#: .\Sources/MainFrame.cpp:519
+msgid "Connect"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:119
+#: .\Sources/MainFrame.cpp:498
+msgid "Connecting AW"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:120
+#: .\Sources/MainFrame.cpp:123
+msgid "Setup"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:120
+msgid "AW Setup"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:122
+#: .\Sources/MainFrame.cpp:520
+msgid "Xelag Server Connection"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:123
+msgid "Xelag Server Setup"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:125
+#: .\Sources/MainFrame.cpp:307
+msgid "Customing"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:125
+msgid "Custom the ChatGlobal"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:126
+msgid "Log Tchat"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:126
+msgid "Tchat recording"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:128
+msgid "Enable"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:128
+msgid "Enable the auto sky engine"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:129
+msgid "Timing"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:129
+msgid "Sun setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:130
+msgid "Colours"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:130
+msgid "Sky colours setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:132
+#: .\Sources/OptionBox.cpp:198
+#: .\Sources/OptionBox.cpp:218
+#: .\Sources/OptionBox.cpp:238
+#: .\Sources/XlgOptBox.cpp:171
+#: .\Sources/XlgOptBox.cpp:191
+#: .\Sources/XlgOptBox.cpp:211
+msgid "Help"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:132
+msgid "ChatGLobal Help"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:133
+msgid "Forum"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:133
+msgid "Abyssia Bots Support"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:134
+#: .\Sources/MainFrame.cpp:401
+msgid "About..."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:134
+msgid "About the ChatGlobal"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:136
+msgid "Bots"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:137
+msgid "Aw"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:138
+msgid "XelagServer"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:139
+msgid "Tools"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:140
+msgid "Sky"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:141
+msgid "?"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:151
+#: .\Sources/MainFrame.cpp:152
+msgid "Connection"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:153
+msgid "Next bot"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:154
+msgid "Previous bot"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:155
+msgid "Options"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:156
+msgid "Customization"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:189
+msgid " Stopped."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:206
+#: .\Sources/MainFrame.cpp:236
+msgid "Are you sure want abording attempts of reconnection?"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:207
+#: .\Sources/MainFrame.cpp:237
+msgid "Warning"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:213
+#: .\Sources/MainFrame.cpp:243
+msgid "Abording Attempts of reconnections"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:271
+msgid "Active Worlds Setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:289
+msgid "Xelagot server setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:332
+msgid "Auto Sky Disabled"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:337
+msgid "Auto Sky Enabled"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:353
+msgid "Sun Time Setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:371
+msgid "Sky Color Setting"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:383
+msgid "http://www.symerion.fr/abyssia/chatglobal.php"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:391
+msgid "http://www.symerion.fr/forum"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:416
+#, c-format
+msgid "Please Select a bot ( 1 -> %d):"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:417
+msgid "Bot Selection..."
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:485
+#: .\Sources/MainFrame.cpp:508
+msgid "Disconnect"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:486
+msgid "AW Disconnection"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:499
+msgid "Disconnected from AW"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:509
+msgid "Xelag Server disconnection"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:510
+msgid "Connected on Xelag Server"
+msgstr ""
+
+#: .\Sources/MainFrame.cpp:521
+msgid "Disconnected from Xelag Server"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:60
+msgid "Citizen :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:62
+#: .\Sources/XlgOptBox.cpp:65
+msgid "PassWord :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:65
+msgid "Universe :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:67
+#: .\Sources/XlgOptBox.cpp:59
+msgid "Port :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:71
+msgid "Bot Name :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:73
+msgid "World :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:78
+#: .\Sources/XlgOptBox.cpp:70
+msgid "Auto connection on startup"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:81
+#: .\Sources/XlgOptBox.cpp:73
+msgid "Reconnection Delay (sec) :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:84
+#: .\Sources/XlgOptBox.cpp:76
+msgid "Number of attempts :"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:88
+msgid "Allow the customized colors"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:198
+#: .\Sources/XlgOptBox.cpp:171
+msgid "You have to set a number ranged between 0 and 65535"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:218
+#: .\Sources/XlgOptBox.cpp:191
+msgid "You have to set a number ranged between 0 and 300 secondes"
+msgstr ""
+
+#: .\Sources/OptionBox.cpp:238
+#: .\Sources/XlgOptBox.cpp:211
+msgid "You have to set a number ranged between 0 and 10 attempts, for infinity set -1"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:63
+msgid "Welcome Message for guests :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:70
+msgid "Incoming Public Message :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:77
+msgid "Outgoing Public Message :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:84
+msgid "Kling winner message :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:91
+msgid "Kloug winner message :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:98
+msgid "Allow space limit hearing (in meters) :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:104
+msgid "Allow area limit hearing Network (in meters) :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:108
+msgid "Coord :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:112
+msgid "Anti Jogger"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:114
+msgid "Time :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:117
+msgid "Attempt :"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:120
+msgid "Ejection (Min):"
+msgstr ""
+
+#: .\Sources/PersoBox.cpp:125
+msgid "Ejection message :"
+msgstr ""
+
+#: .\Sources/XlgOptBox.cpp:57
+msgid "Host :"
+msgstr ""
+
+#: .\Sources/XlgOptBox.cpp:63
+msgid "Login :"
+msgstr ""
+
+#: .\Sources/Global.h:56
+msgid "(All right reserved.)"
+msgstr ""
+

@@ -33,7 +33,8 @@
 enum
 {
 	SOCKET_ID=wxID_HIGHEST,
-	XG_RECO
+	XG_RECO,
+	XG_HB
 };
 
 class CXelag : public wxEvtHandler
@@ -41,10 +42,11 @@ class CXelag : public wxEvtHandler
 	public:
 		friend class CCtrlAw;
 	private:
-		wxSocketClient	*SockXlg;
-		wxTimer			*XgRecoTimer;
-		CCtrlLog		*Logger;
-		CPassPriv		*PassPriv;
+		wxSocketClient*	SockXlg;
+		wxTimer*		XgRecoTimer;
+		wxTimer*		XgHeartBeat;
+		CCtrlLog*		Logger;
+		CPassPriv*		PassPriv;
 
 		bool			ConEC;
 		bool			DemCon;
@@ -99,6 +101,7 @@ static	int				NbXelag;
 	protected:
 		void			XgConnect		(bool);// Connection/Deconnection au serveur Xelag
 		void			OnXgRecoEvent	(wxTimerEvent  & event);
+		void			OnXgHeartBeat   (wxTimerEvent& event);
 		void			OnXelagEvent	(wxSocketEvent & event);
 		wxDECLARE_EVENT_TABLE();
 };

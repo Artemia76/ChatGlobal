@@ -15,10 +15,12 @@
 // *****************************************************************************
 
 #include "CXelagServer.h"
+#include <wx/tokenzr.h>
 
 wxBEGIN_EVENT_TABLE(CXelag, wxEvtHandler)
 	EVT_SOCKET (SOCKET_ID, CXelag::OnXelagEvent)
 	EVT_TIMER  (XG_RECO,   CXelag::OnXgRecoEvent)
+	EVT_TIMER (XG_HB, CXelag::OnXgHeartBeat)
 wxEND_EVENT_TABLE()
 
 //------------------------------------------------------------------------------
@@ -45,6 +47,7 @@ CXelag::CXelag (CBotCG* pBot)
 	SockXlg->SetTimeout (5);
 	SockXlg->Notify(true);
 	XgRecoTimer = new wxTimer(this, XG_RECO);
+	XgHeartBeat = new wxTimer(this, XG_HB);
 	Logger = CCtrlLog::Create();
 	PassPriv = CPassPriv::Create();
 
@@ -115,18 +118,39 @@ void CXelag::OnXelagEvent (wxSocketEvent& event)
 	char buf1[1000];
 	wxString Message=_T("");
 	wxString Tampon,Name,Client,Reponse;
+	wxStringTokenizer tokenizer;
 	switch (event.GetSocketEvent())
 	{
 		case wxSOCKET_INPUT      :
 			SockXlg->Read(buf1, sizeof(buf1));
 			Message << wxString(buf1,wxConvISO8859_1);
 			Message=Message.Truncate(SockXlg->LastCount());
-			TamponTab.Add (Message);
+			tokenizer.SetString(Message, "\n");
+			while (tokenizer.HasMoreTokens())
+			{
+				TamponTab.Add(tokenizer.GetNextToken());
+				// process token here
+			}
 			break;
 		case wxSOCKET_OUTPUT :
 			break;
 		case wxSOCKET_CONNECTION :
 			Logger->Log(ID,_("Connected on the remote host"),_T("BLUE"));
+			On_Xelag = true;
+			ConEC = false;
+			FirstCon = false;
+			ModeReco = false;
+			XgCompt = 0;
+			if (XgCGEna)
+			{
+				XgCGEna = false;
+				CGON();
+			}
+			if (XgRecoTimer->IsRunning()) XgRecoTimer->Stop();
+			XgHeartBeat->Start(5000, false);
+			EnvoiMess(_T("HELLO"));
+			EnvoiMess(_T("NICK ")+ XgLogin);
+			EnvoiMess(_T("USER ") + XgLogin + _T(" 8 * :ChatGlobal IRC Client\n"));
 			break;
 		case wxSOCKET_LOST :
 			Message=_("Xelag Server Connection lost.Reason : ");
@@ -170,6 +194,7 @@ void CXelag::OnXelagEvent (wxSocketEvent& event)
 			ConEC=false;
 			FirstCon=false;
 			TamponTab.Empty();
+			XgHeartBeat->Stop();
 			SockXlg->Close();
 			if (!FirstCon)
 			{
@@ -244,6 +269,7 @@ void CXelag::XgConnect (bool choix)
 		ConEC=false;
 		FirstCon=false;
 		TamponTab.Empty();
+		XgHeartBeat->Stop();
 		SockXlg->Close();
 	}
 }
@@ -255,6 +281,18 @@ void CXelag::OnXgRecoEvent (wxTimerEvent& WXUNUSED(event))
 {
 	XgConnect (true);
 }
+
+//------------------------------------------------------------------------------
+// Méthode de reconnection automatique au serveur Xelagot
+
+void CXelag::OnXgHeartBeat(wxTimerEvent& WXUNUSED(event))
+{
+	if (On_Xelag)
+	{
+		//EnvoiMess(_T("PING"));
+	}
+}
+
 
 //------------------------------------------------------------------------------
 // Tentatives de nouvelle connection
@@ -285,15 +323,9 @@ void CXelag::EnvoiMess(wxString Message, int Type, wxString Name)
 	wxString Reponse;
 	if (On_Xelag)
 	{
-		while(1)
-		{
-			if (Type==1) Reponse=_T("BCR_") + Name + _T(":");
-			else if ((!Type)&&XgCGEna) Reponse=_T("BCM_:");
-				else break;
-			Reponse.Append(Message);
-			SockXlg->Write(Reponse, Reponse.Len());
-			break;
-		}
+		Reponse = Message + _T("\n");
+		Logger->Log(ID, _("Send : ") + Message, _T("BLUE"));
+		SockXlg->Write(Reponse, Reponse.Len());
 	}
 }
 
@@ -352,281 +384,15 @@ void CXelag::Update()
 	{
 		Message =TamponTab[0];
 		TamponTab.RemoveAt (0);
-		while (1)
+		Logger->Log(ID, _("Receive : ") + Message, _T("BLUE"));
+		if (Message.StartsWith(_T("PING ")))
 		{
-			if (!On_Xelag)
-			{
-				if (Message.StartsWith(_T("send login:")))
-				{
-					if (XgCompt>0)
-					{
-						XgCompt=0;
-						Logger->Log(ID,_("Bad Login : Check the conection setting for the Xelag server"),_T("RED"));
-						XgConnect (false);
-						break;
-					}
-					Logger->Log(ID,_("Send login to Xelag Server..."),_T("BLUE"));
-					SockXlg->Write(XgLogin, XgLogin.Len());
-					XgCompt++;
-				}
-				if (Message.StartsWith(_T("send password:")))
-				{
-					if (XgCompt>1)
-					{
-						XgCompt=0;
-						Logger->Log(ID,_("Bad PassWord : Check the conection setting for the Xelag server"),_T("RED"));
-						XgConnect (false);
-						break;
-					}
-					Logger->Log(ID,_("Send the password to Xelag Server..."),_T("BLUE"));
-					SockXlg->Write(XgPassWord, XgPassWord.Len());
-					XgCompt++;
-				}
-				if (Message.StartsWith(_T("already logged in... :(")))
-				{
-					Logger->Log(ID,_("Unable to connect on Xelag Server : Someone is already connected with this login"),_T("RED"));
-					XgConnect (false);
-				}
-				if (Message.Contains(_T(":)")))
-				{
-					Logger->Log(ID,_("Connected on xelag server"),_T("BLUE"));
-					On_Xelag=true;
-					ConEC=false;
-					FirstCon=false;
-					ModeReco=false;
-					XgCompt=0;
-					if (XgCGEna)
-					{
-						XgCGEna=false;
-						CGON();
-					}
-					if (XgRecoTimer->IsRunning()) XgRecoTimer->Stop();
-				}
-			}
-			if (Bot->IsOnWorld()&&XgCGEna)
-			{
-				if (Message.StartsWith(_T("XSA_"),&Tampon))
-				{
-				}
-				if (Message.StartsWith(_T("XSD_"),&Tampon))
-				{
-					Message=Tampon;
-					len=Message.First(_T(':'));
-					Client=Message.Left (len);
-					Bot->Mess_Bot (Client, 4, _T(""), 0);
-				}
-				if ((Message.StartsWith(_T("BCM_"),&Tampon))&&(Bot->IsOnWorld())&&XgCGEna)
-				{
-					Message=Tampon;
-					len=Message.First(':');
-					Client=Message.Left (len);
-					Tampon=Message.Remove(0,len+1);
-					Message=Tampon;
-					len=Message.First(',');
-					Name=Message.Left (len);
-					Tampon=Message.Remove(0,len+1);
-					Message=Tampon.Left(Tampon.Len()-1);
-					if (Message.StartsWith(_T("MBot")))
-					{
-						if(Message.Contains(_T("MBot1")))
-						{
-							Bot->Mess_Bot(Name, 5, Client, 0 );
-							Bot->Kling=true;
-							Bot->NKling=Name;
-						}
-						if(Message.Contains(_T("MBot2")))
-						{
-							Bot->Mess_Bot(Name, 6, Client, 0 );
-							Bot->Kloug=true;
-							Bot->NKloug=Name;
-						}
-						if(Message.Contains(_T("MBot3")))
-						{
-							Bot->Mess_Bot(Name, 3, Client, 0 );
-						}
-						if(Message.Contains(_T("MBot4")))
-						{
-							Bot->Mess_Bot(Name, 4, Client, 0 );
-						}
-					}
-					else Bot->Analyse (Name, 0, 0, Message, 0, true, Client);
-					}
-				}
-			if (Message.StartsWith(_T("BCW_"),&Tampon))
-			{
-				Message=Tampon;
-				len=Message.First(':');
-				Name=Message.Left (len);
-				Tampon=Message.Remove(0,len+1);
-				Message=Tampon;
-				len=Message.First(',');
-				Tampon=Message.Remove(0,len+1);
-				Message=Tampon.Left(Tampon.Len()-1);
-				if (Message==XgLogin)
-				{
-					Reponse=_("Hello ") + Name;
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message==_T("connect"))
-				{
-					if(Bot->IsOnWorld())
-					{
-						Reponse= _("Already connected on ") + Bot->Monde + _T(".");
-						EnvoiMess( Reponse, 1, Name);
-					}
-					else
-					{
-						Reponse=_("Connecting on world ") + Bot->Monde + _T("...");
-						EnvoiMess( Reponse, 1, Name);
-						Bot->Global=true;
-						Bot->Connect();
-					}
-					break;
-				}
-				if (Message==_T("disconnect"))
-				{
-					if (!Bot->IsOnUniverse())
-					{
-						Reponse=_("Already Disconnected.");
-						EnvoiMess( Reponse, 1, Name);
-					}
-					else
-					{
-						Bot->Deconnect();
-						Reponse=_("Disconnecting.");
-						EnvoiMess( Reponse, 1, Name);
-					}
-					break;
-				}
-				if (Message.StartsWith(_T("acctext "),&Tampon))
-				{
-					Bot->TxtMessAc=Tampon;
-					Bot->Sauve();
-					Reponse=_("Welcome Message changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("acccol "),&Tampon))
-				{
-					Bot->ClrMessAc=Bot->ExtColor(Tampon);
-					Bot->Sauve();
-					Reponse=_("The color of welcome message has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("entertext "),&Tampon))
-				{
-					Bot->TxtAnnArr=Tampon;
-					Bot->Sauve();
-					Reponse=_("Incoming Message changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("entercol "),&Tampon))
-				{
-					Bot->ClrAnnArr=Bot->ExtColor(Tampon);
-					Bot->Sauve();
-					Reponse=_("The Incoming message color has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("exittext "),&Tampon))
-				{
-					Bot->TxtAnnDep=Tampon;
-					Bot->Sauve();
-					Reponse=_("Outgoing message changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("exitcol "),&Tampon))
-				{
-					Bot->ClrAnnDep=Bot->ExtColor(Tampon);
-					Bot->Sauve();
-					Reponse=_("The Outgoing message color has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("klingtext "),&Tampon))
-				{
-					Bot->TxtAnnKli=Tampon;
-					Bot->Sauve();
-					Reponse=_("Kling winner message changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("klingcol "),&Tampon))
-				{
-					Bot->ClrAnnKli=Bot->ExtColor(Tampon);
-					Bot->Sauve();
-					Reponse=_("The kling winner message color has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("klougtext "),&Tampon))
-				{
-					Bot->TxtAnnKlo=Tampon;
-					Bot->Sauve();
-					Reponse=_("Kloug winner message changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("klougcol "),&Tampon))
-				{
-					Bot->ClrAnnKlo=Bot->ExtColor(Tampon);
-					Bot->Sauve();
-					Reponse=_("The Kloug winner message color has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("citoyen "),&Tampon))
-				{
-					Tampon.ToLong(&num);
-					Bot->Citoyen=num;
-					Bot->Sauve();
-					Reponse=_("Citizen account has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("password "),&Tampon))
-				{
-					Bot->PassWord=Tampon;
-					Bot->Sauve();
-					Reponse=_("Privilege Password has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("monde "),&Tampon))
-				{
-					Bot->Monde=Tampon;
-					Bot->Sauve();
-					Reponse=_("The world has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message==_T("cgon"))
-				{
-					Reponse=CGON ();
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message==_T("cgoff"))
-				{
-					Reponse=CGOFF ();
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				if (Message.StartsWith(_T("nom "),&Tampon))
-				{
-					Bot->Nom=Tampon;
-					Bot->Sauve();
-					Reponse=_("The bot name has been changed.");
-					EnvoiMess( Reponse, 1, Name);
-					break;
-				}
-				break;
-			}
-			break;
+			Message.StartsWith(_T("PING "), &Tampon);
+			EnvoiMess(_T("PONG ") + Tampon);
+		}
+		if (Message.StartsWith(_T(":")+ XgLogin))
+		{
+			EnvoiMess(_T("JOIN #lobby"));
 		}
 	}
 	if (Bot->DemCGON)

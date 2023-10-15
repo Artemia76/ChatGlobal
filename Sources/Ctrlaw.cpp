@@ -344,7 +344,7 @@ void CCtrlAw::On_Chat(void)
 		Distance=Robot->Distance(Session, 0, true);
 		if (Distance < Robot->ExtDistance) Xlg->EnvoiMess (Message);
 	}
-	else Xlg->EnvoiMess (Message);
+	else Xlg->EnvoiMess (_T("PRIVMSG #lobby : From (DeltaWorld) ") + Message);
 }
 
 //------------------------------------------------------------------------------

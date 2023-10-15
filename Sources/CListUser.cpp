@@ -110,15 +110,15 @@ void CListUser::EffaceTout ()
 
 void CListUser::MajIcones ()
 {
-	int i=0,ID=0;
+	int ID=0;
 	wxString Citizen,Privilege;
-	for (wxVector<CUser>::iterator i = Bot->Users.begin() ; i < Bot->Users.end() ; i++)
+	for (CUser User : Bot->Users)
 	{
-		Citizen.Printf(_T("%d"),i->Citizen);
+		Citizen.Printf(_T("%d"), User.Citizen);
 		Citizen=_T("[")+Citizen+_T("]");
-		Privilege.Printf(_T("%d"),i->Privilege);
+		Privilege.Printf(_T("%d"), User.Privilege);
 		Privilege=_T("[")+Privilege+_T("]");
-		ID=FindItem (-1, i->Nom,false);
+		ID=FindItem (-1, User.Nom,false);
 		if (Bot->OwnerList.Contains (Citizen))
 		{
 			SetItemTextColour (ID, wxColour (_T("BLUE")));
